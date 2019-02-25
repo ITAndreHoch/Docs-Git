@@ -16,7 +16,7 @@ Drowbacks of CVCS:
 - locally is not available
 - If central server is crashed - we can lose everything
 
-![Alt](images/git1.png)
+![Alt](images/git2.png)
 
 # 
 **Set Configuration parameters**
