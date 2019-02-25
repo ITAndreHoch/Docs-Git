@@ -12,6 +12,68 @@ workflow
 
 <img src="images/git3.png " alt="drawing" width="600"/>
 
+
+# git-clone - Clone a repository into a new directory
+
+```
+$ git clone https://github.com/ITAndreHoch/Git.git
+Cloning into 'Git'...
+remote: Enumerating objects: 30, done.
+remote: Counting objects: 100% (30/30), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 30 (delta 7), reused 9 (delta 1), pack-reused 0
+Unpacking objects: 100% (30/30), done.
+
+
+```
+
+# git-push - Update remote refs along with associated objects
+
+```
+$ git add .
+$ git commit -m "branch develop update"
+[develop 3012b89] branch develop update
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test1
+
+$ git push origin develop
+Counting objects: 3, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/ITAndreHoch/Git/pull/new/develop
+remote: 
+To https://github.com/ITAndreHoch/Git.git
+ * [new branch]      develop -> develop
+
+```
+
+# git-pull - Fetch from and integrate with another repository or a local branch
+
+```
+
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/ITAndreHoch/Git
+ * branch            master     -> FETCH_HEAD
+   143fb29..9e0249b  master     -> origin/master
+Updating 143fb29..9e0249b
+Fast-forward
+ git-advance.md | 68 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 67 insertions(+), 1 deletion(-)
+ ```
+ 
+
+
+
 # 
 
 **Branches**
