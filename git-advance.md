@@ -10,7 +10,7 @@
 
 workflow
 
-<img src="images/git3.png " alt="drawing" width="300"/>
+<img src="images/git3.png " alt="drawing" width="600"/>
 
 
 asdasd
