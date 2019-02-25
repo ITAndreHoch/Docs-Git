@@ -206,6 +206,49 @@ drwxr-xr-x   5 andrzejhochbaum  staff   160 Feb 25 14:33 images
 
 <img src="images/git5.png " alt="drawing" width="600"/>
 
+# GIT ROLLBACK
+
+```
+$ git log
+commit e322ced72aa981c76fc85ccaf1ddcf182c4b47e1 (HEAD -> master, origin/master, origin/HEAD)
+Author: Andrzej Hochbaum <a.hochbaum@webellian.com>
+Date:   Mon Feb 25 15:29:49 2019 +0100
+
+    2222222
+
+commit 36978f8538916146c75615dbd1d48b7a9ec82e3b
+Merge: 334867f da601b1
+Author: Andrzej Hochbaum <a.hochbaum@webellian.com>
+Date:   Mon Feb 25 15:25:29 2019 +0100
+
+    Merge branch 'master' of https://github.com/ITAndreHoch/Git
+
+commit 334867f7af57e1715fd6eb762fadc711fc414005
+Author: Andrzej Hochbaum <a.hochbaum@webellian.com>
+Date:   Mon Feb 25 15:24:14 2019 +0100
+
+    add line to git-advance
+
+commit da601b19dbb76bceaa7c086342a1c6ee1fe7615f
+Author: AndreHoch <39279226+ITAndreHoch@users.noreply.github.com>
+Date:   Mon Feb 25 15:15:41 2019 +0100
+
+    Update git-advance.md
+    
+```
+
+$ git reset --hard 36978f8538916146c75615dbd1d48b7a9ec82e3b
+HEAD is now at 36978f8 Merge branch 'master' of https://github.com/ITAndreHoch/Git
+
+
+$ git push origin master -f
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/ITAndreHoch/Git.git
+ + e322ced...36978f8 master -> master (forced update)
+
+
+
+
 
 
 
