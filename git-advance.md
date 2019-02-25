@@ -199,6 +199,14 @@ drwxr-xr-x   5 andrzejhochbaum  staff   160 Feb 25 14:33 images
 
 
 ```
+**Acknowledge merge request**
+
+<img src="images/git4.png " alt="drawing" width="400"/>
+
+
+<img src="images/git5.png " alt="drawing" width="400"/>
+
+
 
 
 
