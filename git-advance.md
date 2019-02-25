@@ -140,6 +140,65 @@ $ git branch
 * develop
   master
 
+```
+
+# Git Merge
+
+* Branch Develop has one file more than master: test1
+
+
+We need to mergge develop branch to master:
+
 
 ```
+$ git branch
+* develop
+  master
+
+$ git merge develop
+Already up to date.
+
+$ ls -la           
+total 24
+drwxr-xr-x   7 andrzejhochbaum  staff   224 Feb 25 14:51 .
+drwxr-xr-x   4 andrzejhochbaum  staff   128 Feb 25 14:33 ..
+drwxr-xr-x  15 andrzejhochbaum  staff   480 Feb 25 14:52 .git
+-rw-r--r--   1 andrzejhochbaum  staff  4090 Feb 25 14:33 README.md
+-rw-r--r--   1 andrzejhochbaum  staff   201 Feb 25 14:51 git-advance.md
+drwxr-xr-x   5 andrzejhochbaum  staff   160 Feb 25 14:33 images
+-rw-r--r--   1 andrzejhochbaum  staff     6 Feb 25 14:51 test1
+
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+$ git branch
+  develop
+* master
+
+```
+
+Merge
+
+```
+$ git merge develop
+Merge made by the 'recursive' strategy.
+ test1 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test1
+
+$ ls -la
+total 24
+drwxr-xr-x   7 andrzejhochbaum  staff   224 Feb 25 14:52 .
+drwxr-xr-x   4 andrzejhochbaum  staff   128 Feb 25 14:33 ..
+drwxr-xr-x  15 andrzejhochbaum  staff   480 Feb 25 14:53 .git
+-rw-r--r--   1 andrzejhochbaum  staff  4090 Feb 25 14:33 README.md
+-rw-r--r--   1 andrzejhochbaum  staff  1990 Feb 25 14:52 git-advance.md
+drwxr-xr-x   5 andrzejhochbaum  staff   160 Feb 25 14:33 images
+-rw-r--r--   1 andrzejhochbaum  staff     6 Feb 25 14:52 test
+
+
+```
+
+
 
