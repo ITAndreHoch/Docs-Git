@@ -10,7 +10,7 @@
 
 workflow
 
-![Alt](images/git3.png)
+<img src="images/git3.png " alt="drawing" width="300"/>
 
 
 asdasd
