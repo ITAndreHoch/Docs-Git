@@ -10,13 +10,13 @@
 * Centralised Version Control System - CVCS
 * Distributed Version Control System - DVCS
 
-![Alt](git1.png)
+![Alt](images/git1.png)
 
 Drowbacks of CVCS:
 - locally is not available
 - If central server is crashed - we can lose everything
 
-![Alt](git1.png)
+![Alt](images/git1.png)
 
 # 
 **Set Configuration parameters**
