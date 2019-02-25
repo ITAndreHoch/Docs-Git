@@ -10,7 +10,7 @@
 
 workflow
 
-<img src="images/git3.png " alt="drawing" width="600"/>
+<img src="images/git3.png " alt="drawing" width="400"/>
 
 
 # git-clone - Clone a repository into a new directory
