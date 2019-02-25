@@ -237,6 +237,10 @@ Date:   Mon Feb 25 15:15:41 2019 +0100
     
 ```
 
+
+ **git reset: git-reset - Reset current HEAD to the specified state**
+ 
+ ```
 $ git reset --hard 36978f8538916146c75615dbd1d48b7a9ec82e3b
 HEAD is now at 36978f8 Merge branch 'master' of https://github.com/ITAndreHoch/Git
 
@@ -246,7 +250,7 @@ Total 0 (delta 0), reused 0 (delta 0)
 To https://github.com/ITAndreHoch/Git.git
  + e322ced...36978f8 master -> master (forced update)
 
-
+```
 
 
 
