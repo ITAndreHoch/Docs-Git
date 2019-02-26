@@ -255,6 +255,72 @@ To https://github.com/ITAndreHoch/Git.git
 
 ```
 
+**Second example: Rollback:
+
+1. Modyfing one file:
+
+```
+cat git-advance.md | more
+# test1
+# GitHub 
+
+[..]
+
+```
+
+vi git-advance.md
+
+```
+cat git-advance.md | more
+# test2
+# GitHub 
+[..]
+
+```
+
+2. check status:
+
+```
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   git-advance.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+3. Reset. git-reset - Reset current HEAD to the specified state
+
+```
+$ git reset HEAD git-advance.md 
+Unstaged changes after reset:
+M	git-advance.md
+```
+4. checkout. git-checkout - Switch branches or restore working tree files
+
+```
+$ git checkout -- git-advance.md 
+
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+$ more git-advance.md 
+# test1
+# GitHub 
+
+[..]
+
+```
+
+
 
 
 
