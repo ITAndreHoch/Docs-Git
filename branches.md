@@ -43,6 +43,10 @@ Deleted branch software (was 182a6d9).
 
 ```
 
+Git merge
 
+```
+git merge develop
+git commit -m "after merge"
 
 ```
