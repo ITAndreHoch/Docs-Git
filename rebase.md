@@ -1,9 +1,26 @@
-# Rebase
+# Rebase  git-rebase - Reapply commits on top of another base tip
+
+
+                     A---B---C topic
+                    /
+               D---E---F---G master
+
+       From this point, the result of either of the following commands:
+
+           git rebase master
+           git rebase master topic
+
+       would be:
+
+                             A'--B'--C' topic
+                            /
+               D---E---F---G master
 
 
 
 
-Example:
+
+Another Example:
 
 In our project’s Git repository, two branches currently exist: the usual master branch, and a feature branch that we created right after the initial commit. On the master branch, we have italicized the ‘a’, then bolded the ‘a’. On our feature branch, we have italicized the ‘b’, and then bolded the ‘b’.
 
