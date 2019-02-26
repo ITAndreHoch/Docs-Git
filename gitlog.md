@@ -3,6 +3,10 @@
 # GIT LOG
 
 
+
+git-log - Show commit logs
+
+
 ```
 
 Andrzejs-MacBook-Pro:Git andrzejhochbaum$ git log
