@@ -45,6 +45,8 @@ Deleted branch software (was 182a6d9).
 
 Git merge
 
+  git-merge - Join two or more development histories together
+  
 ```
 git merge develop
 git commit -m "after merge"
