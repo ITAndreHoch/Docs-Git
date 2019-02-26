@@ -12,3 +12,27 @@ In our project’s Git repository, two branches currently exist: the usual maste
 ![Alt](images/git7.png)
 
 
+**MERGE**
+
+Merge
+We believe our redesign of the letter ‘b’ is nothing short of a masterpiece, so we decide we want to bring our work back into the master branch, incorporating it into the actual project:
+
+```
+git checkout master
+git merge feature
+```
+
+![Alt](images/git8.png)
+![Alt](images/git9.png)
+
+**REBASE**
+
+At a high level, rebasing can be understood as “moving the base of a branch onto a different position”. Think of it like a redo — “I meant to start here.”
+
+git checkout feature
+git rebase master
+
+
+![Alt](images/git10.png)
+
+
