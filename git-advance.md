@@ -320,6 +320,39 @@ $ more git-advance.md
 
 ```
 
+**GIT MV. git-mv - Move or rename a file, a directory, or a symlink**
+
+```
+
+Andrzejs-MacBook-Pro:Git andrzejhochbaum$ git mv ala.txt bartek.txt
+
+Andrzejs-MacBook-Pro:Git andrzejhochbaum$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	renamed:    ala.txt -> bartek.txt
+
+Andrzejs-MacBook-Pro:Git andrzejhochbaum$ git add .
+Andrzejs-MacBook-Pro:Git andrzejhochbaum$ git commit -m "rename files"
+[master c2693c4] rename files
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename ala.txt => bartek.txt (100%)
+
+
+$ ls -la
+total 32
+drwxr-xr-x   7 andrzejhochbaum  staff   224 Feb 26 12:18 .
+drwxr-xr-x   4 andrzejhochbaum  staff   128 Feb 25 14:33 ..
+drwxr-xr-x  15 andrzejhochbaum  staff   480 Feb 26 12:19 .git
+-rw-r--r--   1 andrzejhochbaum  staff  4090 Feb 25 14:33 README.md
+-rw-r--r--   1 andrzejhochbaum  staff    12 Feb 26 12:17 bartek.txt
+-rw-r--r--   1 andrzejhochbaum  staff  7855 Feb 26 12:17 git-advance.md
+drwxr-xr-x   7 andrzejhochbaum  staff   224 Feb 25 15:12 images
+```
+
 
 
 
