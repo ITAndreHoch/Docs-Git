@@ -45,9 +45,10 @@ Deleted branch software (was 182a6d9).
 
 Git merge
 
-  git-merge - Join two or more development histories together
-  
-   Incorporates changes from the named commits (since the time their histories diverged from the
+git-merge - Join two or more development histories together
+
+DESCRIPTION
+       Incorporates changes from the named commits (since the time their histories diverged from the
        current branch) into the current branch. This command is used by git pull to incorporate changes
        from another repository and can be used by hand to merge changes from one branch into another.
 
@@ -74,6 +75,10 @@ Git merge
 
        Warning: Running git merge with non-trivial uncommitted changes is discouraged: while possible, it
        may leave you in a state that is hard to back out of in the case of a conflict.
+  
+
+       
+
 
   
 ```
