@@ -154,3 +154,19 @@ cfd5e93 Update git-advance.md
 3f092de Create git-advance.md
 
 ```
+
+
+comparision two commits:
+
+
+```
+$ git diff 15c3f3b d0908b8
+diff --git a/ala.txt b/ala.txt
+deleted file mode 100644
+index a5bce3f..0000000
+--- a/ala.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-test1
+
+```
